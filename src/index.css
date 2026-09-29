@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "tailwindcss";
+@import "tailwindcss";
+
+/* 1. استيراد الخط العصري العام للموقع */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+/* 2. تعريف الخط المحلي الخاص باللوجو بتاعك (otf) */
+@font-face {
+    font-family: 'CustomLogoFont';
+    src: url('LAXR.otf') format('opentype'); /* تأكد إن اسم ملفك في public مطابق لده */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 3. تطبيق الخط العصري على باقي الموقع بالكامل */
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* 4. كلاس مخصص للوجو فقط عشان يفضل زي ما هو */
+.logo-font {
+    font-family: 'CustomLogoFont', sans-serif !important;
+}
